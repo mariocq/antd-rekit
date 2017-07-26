@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { RedditList } from './';
 import * as actions from './redux/actions';
-
+import { Button } from 'antd';
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -53,7 +53,7 @@ export class DefaultPage extends Component {
               </div>
           }
           <RedditList list={redditReactjsList} />
-        </div>
+        </div><Button type="primary">Button</Button>
       </div>
     );
   }
